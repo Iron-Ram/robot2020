@@ -18,7 +18,7 @@ public class Shooter extends SubsystemBase {
   private static WPI_VictorSPX shooterMotorOne;
   private static WPI_VictorSPX shooterMotorTwo;
   
-  private Shooter() {
+  public Shooter() {
     shooterMotorOne = new WPI_VictorSPX(6);
     shooterMotorTwo = new WPI_VictorSPX(7);
   }

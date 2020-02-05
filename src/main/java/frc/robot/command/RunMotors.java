@@ -7,13 +7,13 @@ public class RunMotors extends CommandBase {
     private double speed;
 
     public RunMotors(double speed) {
-        addRequirements(RobotContainer.drivetrain);
+        addRequirements(RobotContainer.DRIVETRAIN);
         this.speed = speed;
     }//sets speed for motor
 
     @Override
     public void execute() {
-        RobotContainer.drivetrain.drive(speed, speed);
+        RobotContainer.DRIVETRAIN.drive(speed, speed);
     }
 
     @Override

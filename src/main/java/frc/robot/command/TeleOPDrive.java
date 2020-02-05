@@ -6,12 +6,12 @@ import frc.robot.RobotContainer;
 public class TeleOPDrive extends CommandBase {
 
     public TeleOPDrive() {
-        addRequirements(RobotContainer.drivetrain);
+        addRequirements(RobotContainer.DRIVETRAIN);
     }
 
     @Override
     public void execute() {
-        RobotContainer.drivetrain.arcadeDrive(RobotContainer.controller.getRawAxis(1), 
+        RobotContainer.DRIVETRAIN.arcadeDrive(RobotContainer.controller.getRawAxis(1),
         RobotContainer.controller.getRawAxis(4));
     }
 
