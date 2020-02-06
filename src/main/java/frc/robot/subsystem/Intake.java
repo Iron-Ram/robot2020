@@ -7,13 +7,16 @@
 
 package frc.robot.subsystem;
 
+import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 public class Intake extends SubsystemBase {
+  private WPI_VictorSPX intakeOne;
   /**
    * Creates a new Intake.
    */
   public Intake() {
+    intakeOne = new WPI_VictorSPX(8);
 
   }
 

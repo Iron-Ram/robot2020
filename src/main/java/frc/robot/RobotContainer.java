@@ -11,7 +11,7 @@ public class RobotContainer {
     public static final Climber CLIMBER = new Climber();
     public static final Intake INTAKE = new Intake();
     public static final Shooter SHOOTER = new Shooter();
-    
+
 
     public static XboxController controller = new XboxController(0);
 }
